@@ -1,5 +1,27 @@
-"use strict";var u=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var s=u(function(c,i){
-var t=require('@stdlib/math-base-assert-is-nan/dist'),n=require('@stdlib/math-base-special-sqrt/dist');function a(e,r){return t(e)||t(r)||e<=0||r<0||r>1?NaN:n((1-r)*e)/r}i.exports=a
-});var q=s();module.exports=q;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Negative binomial distribution standard deviation.
+*
+* @module @stdlib/stats-base-dists-negative-binomial-stdev
+*
+* @example
+* var stdev = require( '@stdlib/stats-base-dists-negative-binomial-stdev' );
+*
+* var v = stdev( 100, 0.2 );
+* // returns ~44.721
+*
+* v = stdev( 20, 0.5 );
+* // returns ~6.325
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
